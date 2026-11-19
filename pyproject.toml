@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trust-bayesian-agent-comparison"
+version = "1.0.0"
+description = "Trust-sensitive and Bayesian agents in a repeated Stag Hunt: simulation code for Zarreh and Grogan, Design Science"
+authors = [{ name = "Mobin Zarreh" }, { name = "Paul T. Grogan" }]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scipy>=1.13",
+    "matplotlib>=3.9",
+    "seaborn>=0.13.2,<0.14",
+    "joblib>=1.4",
+]
+
+[tool.setuptools.packages.find]
+include = ["trust_bayesian_agent_comparison*"]
